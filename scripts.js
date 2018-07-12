@@ -11,7 +11,7 @@ function findjobs(){
     else if(!description || description === " ") alert("Please enter job description");
     // query URL
     else{
-        var queryURL = `https://localhost:3000/${location}/${description}`
+        var queryURL = `http://127.0.0.1:3000/${location}/${description}`
     
     // make AJAX request using fetch API
     fetch(queryURL)
